@@ -244,3 +244,115 @@ h2 {
       left: 5%;
       width: 90%;
       opacity: 0.6; }
+/* Документы */
+.licences {
+  height: 550px;
+  background-color: #f3f3f3;
+  margin-top: -40px;
+  position: relative; }
+  .licences h2 {
+    padding-top: 65px; }
+  .licences .viewport {
+    margin-top: 42px;
+    margin-left: 40px;
+    width: 94%;
+    height: 400px;
+    overflow: hidden; }
+    .licences .viewport .licences {
+      margin: 0px -320px;
+      width: -webkit-calc(26%*8);
+      width: calc(26%*8);
+      -webkit-transition: -webkit-transform 2s;
+      transition: -webkit-transform 2s;
+      -o-transition: transform 2s;
+      transition: transform 2s;
+      transition: transform 2s, -webkit-transform 2s; }
+      .licences .viewport .licences .licence {
+        width: 255px;
+        float: left;
+        display: inline-block;
+        margin: 0 10px; }
+  .licences .switch {
+    position: absolute;
+    top: 293px;
+    height: 40px;
+    width: 40px;
+    opacity: 0.4; }
+  .licences .switch:hover {
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    cursor: pointer; }
+  .licences .left-switch {
+    left: 0.5%;
+    background: url(../svg/003-back.svg); }
+  .licences .right-switch {
+    right: 0.5%;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    background: url(../svg/003-back.svg);
+    height: 40px;
+    width: 40px; }
+
+/* Контакты */
+.contacts {
+  text-align: left;
+  margin: 62px 56px; }
+  .contacts h2 {
+    text-align: left;
+    padding-bottom: 10px; }
+  .contacts p {
+    display: block;
+    width: 50%; }
+  .contacts .info {
+    margin: 50px -12px; }
+    .contacts .info .address {
+      padding-top: -20px; }
+      .contacts .info .address h5 {
+        padding-top: 20px;
+        font-size: 1.2em;
+        color: #bebebe !important; }
+    .contacts .info .address:first-child {
+      margin-top: -20px;
+      padding-top: 0px; }
+  .contacts form {
+    margin: 38px 10px; }
+    .contacts form input, .contacts form select, .contacts form textarea {
+      display: block;
+      height: 2.9em;
+      width: 335px;
+      margin-bottom: 25px;
+      -webkit-border-radius: 4px;
+              border-radius: 4px;
+      text-indent: 18px;
+      border-style: none;
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      color: #1d1d1d; }
+    .contacts form textarea {
+      height: 106px;
+      padding-top: 10px; }
+    .contacts form .right-side {
+      padding-left: 40px; }
+    .contacts form .addfile {
+      position: relative; }
+      .contacts form .addfile input {
+        text-decoration: underline;
+        text-indent: 40px; }
+      .contacts form .addfile .fa {
+        -webkit-transform: rotate(225deg);
+            -ms-transform: rotate(225deg);
+                transform: rotate(225deg);
+        position: absolute;
+        font-size: 18px;
+        top: 12px;
+        left: 18px; }
+    .contacts form .btn {
+      background: #ff000c;
+      width: 102%;
+      margin: 5px 15px;
+      font-family: 'MyriadPro', sans-serif;
+      color: #f6f6f6;
+      font-size: 15px;
+      border: none; }

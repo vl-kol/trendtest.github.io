@@ -195,3 +195,103 @@ h2
 			left: 5%
 			width: 90%
 			opacity: 0.6
+/* Документы */
+.licences
+	height: 550px
+	background-color: #f3f3f3
+	margin-top: -40px
+	position: relative
+	h2
+		padding-top: 65px
+	.viewport  /* --- Область видимости картинок (4 шт) --- */
+		margin-top: 42px
+		margin-left: 40px
+		width: 94%
+		height: 400px
+		overflow: hidden
+		.licences /* --- Все картинки --- */
+			margin: 0px -320px
+			width: calc(26%*8)
+			transition: transform 2s;	
+			.licence
+				width: 255px
+				float: left
+				display: inline-block
+				margin: 0 10px
+	.switch
+		position: absolute
+		top: 293px
+		height: 40px
+		width: 40px
+		opacity: 0.4
+	.switch:hover
+		opacity: 1
+		transition: opacity 1s
+		cursor: pointer
+	.left-switch
+		left: 0.5%
+		background: url(../svg/003-back.svg)
+	.right-switch
+		right: 0.5%
+		transform: rotate(180deg)
+		background: url(../svg/003-back.svg)
+		height: 40px
+		width: 40px
+/* Контакты */
+.contacts
+	text-align: left
+	margin: 62px 56px
+	h2
+		text-align: left
+		padding-bottom: 10px
+	p
+		display: block
+		width: 50%
+	.info
+		margin: 50px -12px
+		.address
+			padding-top: -20px
+			h5
+				padding-top: 20px
+				font-size: 1.2em
+				color: $grey !important
+		.address:first-child
+			margin-top: -20px
+			padding-top: 0px
+
+	form
+		margin: 38px 10px
+		input, select, textarea
+			display: block
+			height: 2.9em
+			width: 335px
+			margin-bottom: 25px
+			border-radius: 4px
+			text-indent: 18px
+			border-style: none
+			border: 1px solid rgba(0,0,0,0.4)
+			color: $black
+		textarea
+			height: 106px
+			padding-top: 10px
+		.right-side
+			padding-left: 40px
+		.addfile
+			position: relative
+			input
+				text-decoration: underline
+				text-indent: 40px
+			.fa
+				transform: rotate(225deg)
+				position: absolute
+				font-size: 18px
+				top: 12px
+				left: 18px
+		.btn
+			background: $red
+			width: 102%
+			margin: 5px 15px
+			font-family: 'MyriadPro', sans-serif
+			color: $white
+			font-size: 15px
+			border: none
