@@ -8,3 +8,239 @@ body, html {
   font-size: 16px;
   max-width: 1200px;
   margin: 0 auto; }
+a {
+  color: #1d1d1d;
+  text-decoration: none; }
+
+/* Верхняя шапка */
+.topline {
+  min-height: 31px;
+  background-color: #222222;
+  font-size: 11.8px; }
+  .topline a {
+    color: #bebebe;
+    float: right;
+    display: inline-block;
+    line-height: 31px;
+    padding: 0 19px; }
+
+/* Главное меню */
+.menu {
+  min-height: 96px;
+  font-size: 14px; }
+  .menu .logo {
+    float: left;
+    padding: 26px 14px; }
+  .menu .topmenu {
+    float: right;
+    min-height: 100%; }
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    line-height: 76px;
+    min-height: 100%; }
+    .menu ul .item {
+      position: relative;
+      padding: 0 6.3px;
+      display: inline-block;
+      text-transform: uppercase;
+      height: 100%;
+      /* Выпадающее меню */ }
+      .menu ul .item a {
+        height: 100%;
+        color: #1d1d1d;
+        font-weight: normal; }
+      .menu ul .item a:hover {
+        color: #ff000c;
+        background: none; }
+      .menu ul .item .dropdown-list {
+        display: none;
+        -webkit-box-shadow: inset 0 6px 25px -5px;
+                box-shadow: inset 0 6px 25px -5px;
+        position: absolute;
+        background: #f6f6f6;
+        list-style-type: none;
+        top: 96px;
+        left: -23px;
+        width: 408px;
+        line-height: 20px;
+        text-indent: 39px; }
+        .menu ul .item .dropdown-list .dd-item-desc {
+          font-size: 13px;
+          padding-top: 28px;
+          padding-bottom: 14px; }
+        .menu ul .item .dropdown-list .dd-item {
+          font-size: 14px;
+          height: 26px;
+          padding: 0px 0;
+          text-transform: none;
+          letter-spacing: -0.2px; }
+        .menu ul .item .dropdown-list .dd-item:last-child {
+          margin-bottom: 20px; }
+      .menu ul .item a {
+        height: 100%;
+        font-weight: normal; }
+      .menu ul .item a:hover {
+        color: #ff000c; }
+    .menu ul .active a {
+      color: #ff000c; }
+/* Слайдер */
+.slider {
+  z-index: -1;
+  height: 423px;
+  overflow: hidden;
+  position: relative;
+  background-color: #1d1d1d; }
+  .slider .slides {
+    margin-top: -360px;
+    padding: 0;
+    background-color: black;
+    opacity: 0.6; }
+  .slider .caption {
+    position: absolute;
+    color: #f6f6f6;
+    top: 60px;
+    left: 55px; }
+    .slider .caption h1 {
+      font-weight: normal;
+      font-size: 26px;
+      text-shadow: 1px 1px 1px #1d1d1d;
+      letter-spacing: 1.2px; }
+      .slider .caption h1 span {
+        display: block;
+        text-transform: uppercase;
+        font-size: 32px;
+        letter-spacing: 2.4px;
+        margin-top: 12px;
+        font-weight: bold;
+        letter-spacing: 4.2px; }
+    .slider .caption p {
+      width: 60%;
+      font-weight: normal;
+      font-size: 14px;
+      letter-spacing: 1.1px;
+      margin-top: 16px;
+      line-height: 22px; }
+    .slider .caption .arrow {
+      margin-top: 5px;
+      background: url(../svg/001-right-arrow.svg);
+      height: 19px;
+      width: 19px;
+      display: inline-block; }
+    .slider .caption .left-arrow {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .slider .caption .right-arrow {
+      margin-left: 26px; }
+
+.feedback {
+  z-index: 10;
+  background-color: #f6f6f6;
+  height: 156px;
+  width: 97.5%;
+  margin: 0 auto;
+  margin-top: -122px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-box-shadow: 0 0 8px 0;
+          box-shadow: 0 0 8px 0;
+  position: relative; }
+  .feedback h3 {
+    padding-top: 50px;
+    padding-left: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px; }
+  .feedback p {
+    padding-top: 12px;
+    padding-left: 40px;
+    font-weight: 100;
+    font-size: 14px; }
+  .feedback input {
+    position: absolute;
+    width: 242px;
+    height: 40px;
+    right: 40px;
+    top: 80px;
+    background-color: #ff000c;
+    color: #f6f6f6;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    font-family: 'MyriadPro', sans-serif;
+    font-size: 17px;
+    border: none !important;
+    letter-spacing: 0.5px;
+    padding-bottom: 5px; }
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold !important;
+  font-size: 18px !important; }
+
+.tizers {
+  padding-top: 42px;
+  margin: 0 auto;
+  height: 400px;
+  margin-left: -15px; }
+  .tizers .container {
+    padding: 0;
+    margin: 0 auto;
+    height: 51%; }
+  .tizers h2 {
+    padding-bottom: 45px; }
+  .tizers .tizer {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 25%; }
+    .tizers .tizer .wrap {
+      margin: 0 auto;
+      text-align: center;
+      -webkit-border-radius: 8px;
+              border-radius: 8px;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background-color: black; }
+      .tizers .tizer .wrap h4 {
+        padding-top: 44px;
+        display: block;
+        text-align: left;
+        padding-left: 30px;
+        width: 270px;
+        font-weight: 700;
+        font-size: 20px;
+        opacity: 1; }
+      .tizers .tizer .wrap a {
+        color: white; }
+        .tizers .tizer .wrap a h4 {
+          padding-left: 40px;
+          width: 220px;
+          font-size: 15px;
+          font-weight: 600;
+          padding-bottom: 21px; }
+        .tizers .tizer .wrap a hr {
+          width: 220px;
+          margin-left: 40px; }
+        .tizers .tizer .wrap a p {
+          text-align: left;
+          padding-left: 40px;
+          font-weight: 600;
+          margin-top: -5px; }
+        .tizers .tizer .wrap a .arrow {
+          position: absolute;
+          top: 145px;
+          right: 15%;
+          background: url(../svg/001-arrow.svg);
+          height: 19px;
+          width: 19px; }
+    .tizers .tizer img {
+      position: absolute;
+      -webkit-border-radius: 12px;
+              border-radius: 12px;
+      top: 0;
+      left: 5%;
+      width: 90%;
+      opacity: 0.6; }
