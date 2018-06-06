@@ -2,7 +2,7 @@
 /* Переменные */
 /* Основные настройки */
 body, html {
-  font-family: 'Gotham Pro Regular';
+  font-family: 'Gotham Pro Regular', sans-serif;
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -131,9 +131,11 @@ a {
     .slider .caption .left-arrow {
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
-              transform: rotate(180deg); }
+              transform: rotate(180deg);
+      cursor: pointer; }
     .slider .caption .right-arrow {
-      margin-left: 26px; }
+      margin-left: 26px;
+      cursor: pointer; }
 
 /* Обратная связь */
 .feedback {
@@ -220,6 +222,8 @@ h2 {
         opacity: 1; }
       .tizers .tizer .wrap a {
         color: white; }
+        .tizers .tizer .wrap a:hover {
+          color: red; }
         .tizers .tizer .wrap a h4 {
           padding-left: 40px;
           width: 220px;
@@ -251,21 +255,21 @@ h2 {
       opacity: 0.6; }
 
 /* Документы */
-.licences {
+.docs {
   height: 550px;
   background-color: #f3f3f3;
   margin-top: -40px;
   position: relative; }
-  .licences h2 {
+  .docs h2 {
     padding-top: 65px; }
-  .licences .viewport {
+  .docs .viewport {
     margin-top: 42px;
     margin-left: 40px;
     width: 94%;
     height: 400px;
     overflow: hidden; }
-    .licences .viewport .licences {
-      margin: 0px -320px;
+    .docs .viewport .licences {
+      margin: 0px -45px;
       width: -webkit-calc(26%*8);
       width: calc(26%*8);
       -webkit-transition: -webkit-transform 2s;
@@ -273,27 +277,27 @@ h2 {
       -o-transition: transform 2s;
       transition: transform 2s;
       transition: transform 2s, -webkit-transform 2s; }
-      .licences .viewport .licences .licence {
+      .docs .viewport .licences .licence {
         width: 255px;
         float: left;
         display: inline-block;
         margin: 0 10px; }
-  .licences .switch {
+  .docs .switch {
     position: absolute;
     top: 293px;
     height: 40px;
     width: 40px;
     opacity: 0.4; }
-  .licences .switch:hover {
+  .docs .switch:hover {
     opacity: 1;
     -webkit-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
     cursor: pointer; }
-  .licences .left-switch {
+  .docs .left-switch {
     left: 0.5%;
     background: url(../svg/003-back.svg); }
-  .licences .right-switch {
+  .docs .right-switch {
     right: 0.5%;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
@@ -343,10 +347,13 @@ h2 {
     .contacts form .right-side {
       padding-left: 40px; }
     .contacts form .addfile {
-      position: relative; }
-      .contacts form .addfile input {
+      position: relative;
+      cursor: pointer; }
+      .contacts form .addfile .addtext {
+        text-indent: 40px;
+        color: #1d1d1d;
         text-decoration: underline;
-        text-indent: 40px; }
+        cursor: pointer; }
       .contacts form .addfile .fa {
         -webkit-transform: rotate(225deg);
             -ms-transform: rotate(225deg);
@@ -367,21 +374,21 @@ h2 {
         background-color: #620000; }
 
 /* Партнеры */
-.partners {
+.partn {
   height: 300px;
   margin-top: -40px;
   position: relative; }
-  .partners h2 {
+  .partn h2 {
     padding-top: 65px;
     padding-bottom: 10px; }
-  .partners .viewport {
+  .partn .viewport {
     margin-top: 42px;
     margin-left: 40px;
     width: 94%;
     height: 300px;
     overflow: hidden; }
-    .partners .viewport .partners {
-      margin: 0px -270px;
+    .partn .viewport .partners {
+      margin: 0px -40px;
       width: -webkit-calc(20%*10);
       width: calc(20%*10);
       -webkit-transition: -webkit-transform 2s;
@@ -389,27 +396,27 @@ h2 {
       -o-transition: transform 2s;
       transition: transform 2s;
       transition: transform 2s, -webkit-transform 2s; }
-      .partners .viewport .partners .partner {
+      .partn .viewport .partners .partner {
         width: 200px;
         float: left;
         display: inline-block;
         margin: 0 10px; }
-  .partners .switch {
+  .partn .switch {
     position: absolute;
     top: 157px;
     height: 40px;
     width: 40px;
     opacity: 0.4; }
-  .partners .switch:hover {
+  .partn .switch:hover {
     opacity: 1;
     -webkit-transition: opacity 1s;
     -o-transition: opacity 1s;
     transition: opacity 1s;
     cursor: pointer; }
-  .partners .left-switch {
+  .partn .left-switch {
     left: 0.5%;
     background: url(../svg/003-back.svg); }
-  .partners .right-switch {
+  .partn .right-switch {
     right: 0.5%;
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);

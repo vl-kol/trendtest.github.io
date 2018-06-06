@@ -7,7 +7,7 @@ $dark-red: #620000
 
 /* Основные настройки */
 body, html
-	font-family: 'Gotham Pro Regular'	
+	font-family: 'Gotham Pro Regular', sans-serif	
 	padding: 0 
 	margin: 0	
 	font-size: 16px
@@ -137,8 +137,10 @@ a
 			display: inline-block
 		.left-arrow
 			transform: rotate(180deg)
+			cursor: pointer
 		.right-arrow
 			margin-left: 26px
+			cursor: pointer
 /* Обратная связь */
 .feedback
 	z-index: 10
@@ -218,6 +220,8 @@ h2
 				opacity: 1
 			a
 				color: rgba(255,255,255,1);
+				&:hover
+					color: rgba(255,0,0,1);
 				h4
 					padding-left: 40px
 					width: 220px
@@ -247,7 +251,7 @@ h2
 			width: 90%
 			opacity: 0.6
 /* Документы */
-.licences
+.docs
 	height: 550px
 	background-color: #f3f3f3
 	margin-top: -40px
@@ -261,7 +265,7 @@ h2
 		height: 400px
 		overflow: hidden
 		.licences /* --- Все картинки --- */
-			margin: 0px -320px
+			margin: 0px -45px
 			width: calc(26%*8)
 			transition: transform 2s;	
 			.licence
@@ -330,9 +334,12 @@ h2
 			padding-left: 40px
 		.addfile
 			position: relative
-			input
-				text-decoration: underline
+			cursor: pointer	
+			.addtext
 				text-indent: 40px
+				color: $black
+				text-decoration: underline
+				cursor: pointer
 			.fa
 				transform: rotate(225deg)
 				position: absolute
@@ -351,7 +358,7 @@ h2
 				background-color: $dark-red
 
 /* Партнеры */
-.partners
+.partn
 	height: 300px
 	margin-top: -40px
 	position: relative
@@ -365,7 +372,7 @@ h2
 		height: 300px
 		overflow: hidden
 		.partners /* --- Все картинки --- */
-			margin: 0px -270px
+			margin: 0px -40px
 			width: calc(20%*10)
 			transition: transform 2s;	
 			.partner
