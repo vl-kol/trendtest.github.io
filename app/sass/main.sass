@@ -2,7 +2,8 @@
 $white: #f6f6f6
 $black: #1d1d1d
 $grey: #bebebe
-$red: #ff000c
+$red: #ad0000
+$dark-red: #620000
 
 /* Основные настройки */
 body, html
@@ -15,7 +16,7 @@ body, html
 a 
 	color: $black
 	text-decoration: none
-	
+
 /* Верхняя шапка */
 .topline
 	min-height: 31px
@@ -54,9 +55,8 @@ a
 				height: 100%
 				color: $black
 				font-weight: normal
-			a:hover
-				color: $red 
-				background: none
+				&:hover
+					color: $red 
 			/* Выпадающее меню */
 			.dropdown-list
 				display: none
@@ -79,16 +79,66 @@ a
 					padding: 0px 0
 					text-transform: none
 					letter-spacing: -0.2px
-				.dd-item:last-child
-					margin-bottom: 20px
+					&:last-child
+						margin-bottom: 20px
 			a	
 				height: 100%
 				font-weight: normal
-			a:hover
-				color: $red 
+				&:hover
+					color: $red 
 		.active
 			a
 				color: $red 
+
+/* Слайдер */
+.slider
+	z-index: -1
+	height: 423px
+	overflow: hidden
+	position: relative
+	background-color: $black
+	.slides
+		margin-top: -360px
+		padding: 0
+		background-color: black
+		opacity: 0.6
+	.caption
+		position: absolute
+		color: $white
+		top: 60px
+		left: 55px
+		h1
+			font-weight: normal
+			font-size: 26px
+			//line-height:
+			text-shadow: 1px 1px 1px $black
+			letter-spacing: 1.2px
+			span
+				display: block
+				text-transform: uppercase
+				font-size: 32px
+				letter-spacing: 2.4px
+				margin-top: 12px
+				font-weight: bold
+				letter-spacing: 4.2px
+		p
+			width: 60%
+			font-weight: normal
+			font-size: 14px
+			letter-spacing: 1.1px
+			margin-top: 16px
+			line-height: 22px
+
+		.arrow
+			margin-top: 5px
+			background: url(../svg/001-right-arrow.svg)
+			height: 19px
+			width: 19px
+			display: inline-block
+		.left-arrow
+			transform: rotate(180deg)
+		.right-arrow
+			margin-left: 26px
 /* Обратная связь */
 .feedback
 	z-index: 10
@@ -125,7 +175,8 @@ a
 		border: none !important
 		letter-spacing: 0.5px
 		padding-bottom: 5px
-
+		&:hover
+			background-color: $dark-red
 h2
 	text-transform: uppercase
 	text-align: center
@@ -241,6 +292,7 @@ h2
 .contacts
 	text-align: left
 	margin: 62px 56px
+	margin-bottom: 435px
 	h2
 		text-align: left
 		padding-bottom: 10px
@@ -295,3 +347,100 @@ h2
 			color: $white
 			font-size: 15px
 			border: none
+			&:hover
+				background-color: $dark-red
+
+/* Партнеры */
+.partners
+	height: 300px
+	margin-top: -40px
+	position: relative
+	h2
+		padding-top: 65px
+		padding-bottom: 10px
+	.viewport  /* --- Область видимости картинок (4 шт) --- */
+		margin-top: 42px
+		margin-left: 40px
+		width: 94%
+		height: 300px
+		overflow: hidden
+		.partners /* --- Все картинки --- */
+			margin: 0px -270px
+			width: calc(20%*10)
+			transition: transform 2s;	
+			.partner
+				width: 200px
+				float: left
+				display: inline-block
+				margin: 0 10px
+	.switch
+		position: absolute
+		top: 157px
+		height: 40px
+		width: 40px
+		opacity: 0.4
+	.switch:hover
+		opacity: 1
+		transition: opacity 1s
+		cursor: pointer
+	.left-switch
+		left: 0.5%
+		background: url(../svg/003-back.svg)
+	.right-switch
+		right: 0.5%
+		transform: rotate(180deg)
+		background: url(../svg/003-back.svg)
+		height: 40px
+		width: 40px
+
+.bigmenu
+	margin-top: -20px
+	padding-top: 60px
+	height: 280px
+	color: $white
+	font-weight: bold
+	background-color: #1d1d1d
+	ul
+		list-style-type: none
+		margin: 0
+		padding: 0
+	a
+		color: $white
+	.column-1 li	
+		margin-bottom: 10px
+	.column-2
+
+	.column-2-1 li
+		font-weight: normal	
+		margin-top: 8px
+		color: $grey
+	.column-2-2
+		font-weight: normal	
+		margin-top: 28px
+		color: $grey
+	.column-2-2 li
+		margin-bottom: 8px
+	.column-3
+		font-weight: normal
+		margin: -7px -20px
+		h5
+			font-weight: bold
+			margin-bottom: 15px
+		address , p
+			font-size: 12px
+			margin-bottom: 10px
+.bottomline
+	height: 60px
+	background-color: #101010
+	p
+		color: $grey
+		font-size: 12px
+	.lbl
+		float: left
+		margin: 23px 20px
+	.rbl
+		float: right
+		margin-right: 30px
+		margin-top: 23px
+
+			
