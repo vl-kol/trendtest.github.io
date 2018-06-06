@@ -1,0 +1,58 @@
+
+   @font-face {
+    font-family: 'MyriadPro';
+    src: url(../fonts/MyriadPro/MyriadPro-Bold.otf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+   }
+
+/*    @font-face {
+ font-family: GothamPro;
+ src: url(../fonts/GothamPro/10178.otf) format("truetype");
+ font-weight: 100;
+ font-style: normal;
+}
+
+ @font-face {
+ font-family: GothamPro;
+ src: url(../fonts/GothamPro/10183.ttf) format("truetype");
+ font-weight: 400;
+ font-style: normal;
+ }
+
+ @font-face {
+ font-family: GothamPro;
+ src: url(../fonts/GothamPro/11024.ttf) format("truetype");
+ font-weight: bold;
+ font-style: normal;
+ }
+ */
+    @font-face {
+    font-family: 'Gotham Pro Black';
+    src: url('../fonts/GothamPro/GothamPro-Black.eot');
+    src: url('../fonts/GothamPro/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro/GothamPro-Black.woff') format('woff'),
+    url('../fonts/GothamPro/GothamPro-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+    font-family: 'Gotham Pro Regular';
+    src: url('../fonts/GothamPro/GothamPro.eot');
+    src: url('../fonts/GothamPro/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro/GothamPro.woff') format('woff'),
+    url('../fonts/GothamPro/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('../fonts/GothamPro/GothamPro-Bold.eot');
+    src: url('../fonts/GothamPro/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GothamPro/GothamPro-Bold.woff') format('woff'),
+    url('../fonts/GothamPro/GothamPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
